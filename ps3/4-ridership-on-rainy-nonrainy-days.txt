@@ -1,0 +1,5 @@
+1. Is the distribution of the number of entries statistically different between rainy and non rainy days?
+Ans: Yes
+
+2. Describe your results and the methods used:
+Ans: Using Mann-Whitney test, it is determined that the 2-tailed p value satisfied the p-critical value of 0.05, which indicates that the number of entries is statistically different between rainy and non rainy days.
