@@ -47,5 +47,5 @@ def plot_weather_data(turnstile_weather):
     df['Times'] = times
     dfTimes = df.groupby(['Times'], as_index=False).sum()
     plot = ggplot(dfTimes, aes(x='Times',y='ENTRIESn_hourly')) + \
-            geom_point(color='red') + geom_line(color='red') + ggtitle('Ridership Entries by Time of Day') + xlab('Time') + ylab('Entries')
+            geom_point(color='red') + geom_line(color='red') + ggtitle('Ridership Entries by Time of Day') + scale_x_continuous(name="Time of day (0-24 Hr)", limits=(0,24))
     return plot
